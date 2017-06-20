@@ -9,21 +9,45 @@
 	<title>easy-vreco</title>
 </head>
 <body>
+	
 	<section>
 		<div class="row">
 			<div class="col-md-12 col-ms-12">
 				<button id="encuentrame">Encuéntrame</button>
 			
-				<label for="comienzo">Origen</label>
-				<input class="Autocomplete" type="text" id="txtPlaces" placeholder="Ingresa dirección">
+				<label for="changemode-walking">Origen</label>
+
+				<input class="Autocomplete" type="text" id="txtPlaces" placeholder="Ingresa dirección" id="origin-input" class="controls">
 			
 			
 				<label for="temino">Destino</label>
-				<input type="text" id="locationTextField" placeholder="Ingresa dirección">
+
+				<input id="destination-input" class="controls" type="text" placeholder="Ingresa dirección">
 
 			
 				<button id="encuentrame">Ruta</button>
-			
+
+
+
+
+<!--				    <input id="origin-input" class="controls" type="text"
+				        placeholder="Enter an origin location">
+
+				    <input id="destination-input" class="controls" type="text"
+				        placeholder="Enter a destination location">
+
+				    <div id="mode-selector" class="controls">
+				      <input type="radio" name="type" id="changemode-walking" checked="checked">
+				      <label for="changemode-walking">Walking</label>
+
+				      <input type="radio" name="type" id="changemode-transit">
+				      <label for="changemode-transit">Transit</label>
+
+				      <input type="radio" name="type" id="changemode-driving">
+				      <label for="changemode-driving">Driving</label>
+				    </div>			
+-->
+
 
 		</div>
 		<div class="row">
@@ -41,6 +65,5 @@
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdSGcRYfOrvVoyyNbXIqLnG-z2kpA91Ys&libraries=places&callback=initMap"
         async defer></script>
 	<script src="assets/js/app.js"></script>
-</body>
 </body>
 </html>
