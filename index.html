@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	<title>easy-vreco</title>
+</head>
+<body>
+	<section>
+		<div class="row">
+			<div class="col-md-12 col-ms-12">
+				<button id="encuentrame">Encuéntrame</button>
+			
+				<label for="comienzo">Origen</label>
+				<input class="Autocomplete" type="text" id="txtPlaces" placeholder="Ingresa dirección">
+			
+			
+				<label for="temino">Destino</label>
+				<input type="text" id="locationTextField" placeholder="Ingresa dirección">
+
+			
+				<button id="encuentrame">Ruta</button>
+			
+
+		</div>
+		<div class="row">
+			<div class="col-md-12 col-ms-12" id="map">
+				<!-- Aquí ira nuestro mapa -->
+			</div>
+		</div>
+	</section>
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdSGcRYfOrvVoyyNbXIqLnG-z2kpA91Ys&callback=initMap"
+    async defer></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<!-- libreria de lugares -->
+<!--	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdSGcRYfOrvVoyyNbXIqLnG-z2kpA91Ys&libraries=places"></script> -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdSGcRYfOrvVoyyNbXIqLnG-z2kpA91Ys&libraries=places&callback=initMap"
+        async defer></script>
+	<script src="assets/js/app.js"></script>
+</body>
+</body>
+</html>
