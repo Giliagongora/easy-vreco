@@ -8,9 +8,13 @@ body{
 .row{
 	margin: 0px;
 }
+.col-md-12.col-ms-12{
+	padding-left: 25%;
+	padding-top: 2%
+}
 #map{
 	width: 90%;
-	height: 80vh;
+	height: 75vh;
 	border: 2px solid black;
 	margin-top: 3%;
 	margin-left: 5%;

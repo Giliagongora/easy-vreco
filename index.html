@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600" rel="stylesheet"> 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
 	<title>easy-vreco</title>
 </head>
@@ -12,12 +13,13 @@
 	
 	<section>
 		<div class="row">
-			<div class="col-md-12 col-ms-12">
+			<div class="col-md-12 col-ms-12" id="areabotones">
+
 				<button id="encuentrame">Encuéntrame</button>
 			
-				<label for="changemode-walking">Origen</label>
+<!--				<label for="inicio">Origen</label>
 
-				<input class="Autocomplete" type="text" id="txtPlaces" placeholder="Ingresa dirección" id="origin-input" class="controls">
+				<input id="origin-input" class="controls" type="text" placeholder="Ingresa dirección">
 			
 			
 				<label for="temino">Destino</label>
@@ -25,18 +27,19 @@
 				<input id="destination-input" class="controls" type="text" placeholder="Ingresa dirección">
 
 			
-				<button id="encuentrame">Ruta</button>
+				<button id="changemode-walking" id="encuentrame">Ruta</button>
+
+-->
 
 
-
-
-<!--				    <input id="origin-input" class="controls" type="text"
+				    <input id="origin-input" id="origin-input" class="controls" type="text"
 				        placeholder="Enter an origin location">
 
 				    <input id="destination-input" class="controls" type="text"
 				        placeholder="Enter a destination location">
 
 				    <div id="mode-selector" class="controls">
+
 				      <input type="radio" name="type" id="changemode-walking" checked="checked">
 				      <label for="changemode-walking">Walking</label>
 
@@ -46,9 +49,9 @@
 				      <input type="radio" name="type" id="changemode-driving">
 				      <label for="changemode-driving">Driving</label>
 				    </div>			
--->
 
 
+			</div>
 		</div>
 		<div class="row">
 			<div class="col-md-12 col-ms-12" id="map">
@@ -59,7 +62,7 @@
 
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdSGcRYfOrvVoyyNbXIqLnG-z2kpA91Ys&callback=initMap"
     async defer></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!--	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
 	<!-- libreria de lugares -->
 <!--	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdSGcRYfOrvVoyyNbXIqLnG-z2kpA91Ys&libraries=places"></script> -->
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdSGcRYfOrvVoyyNbXIqLnG-z2kpA91Ys&libraries=places&callback=initMap"

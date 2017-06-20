@@ -27,11 +27,12 @@ var latitud, longitud;
 var funcionExito = function(posicion){
   latitud = posicion.coords.latitude;
   longitud = posicion.coords.longitude;
-
+   var image = "http://maps.google.com/mapfiles/kml/shapes/";
   var miUbicacion = new google.maps.Marker({
     position: {lat:latitud, lng:longitud},
     animation: google.maps.Animation.DROP,
-    map: map
+    map: map,
+    icon:image + "cycling.png"
   });
   /* aumentaremos profundidad de visualizacion del mapa (map.setZomm) y nuevo centro (map.setCenter) */
   map.setZoom(17);
